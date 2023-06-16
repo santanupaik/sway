@@ -14,6 +14,7 @@ Fuzzel - Application Launcher
 
 # Prerequisites :-
 AMD GPU should be used instead of NVIDIA.
+
 You can Run the required_packages.sh script to update & install all the necessary packages for this setup to function.
 
 # Installation :-
