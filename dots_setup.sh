@@ -19,8 +19,9 @@ mkdir /home/$USER/.icons
 mkdir /home/$USER/.themes
 
 cp -r wallpapers/ /home/$USER/.wallpapers/
-cp -r icons/ /home/$USER/.icons/
-cp -r themes/ /home/$USER/.themes/
+unzip themes/Tokyonight-Dark-B.zip -d /home/$USER/.themes/
+unzip icons/Cursor.zip -d /home/$USER/.icons/
+tar -xf icons/papirus-icon-theme-yaru-folders.tar.xz -C /home/$USER/.icons/ Papirus
 sync
 ln -sf /home/$USER/.icons/Papirus /home/$USER/.local/share/icons/
 ln -sf /home/$USER/.themes/Tokyonight-Dark-B/gtk-4.0 /home/$USER/.config/
