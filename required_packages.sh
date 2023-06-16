@@ -25,7 +25,7 @@ esac
 echo
 sudo pacman -Syu --noconfirm
 echo
-echo "Installing all the Required Packages."
+echo "Installing all the Required Packages..."
 sleep 1s
 echo
 sudo pacman -S --noconfirm xdg-desktop-portal 
