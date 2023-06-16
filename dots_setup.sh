@@ -21,6 +21,8 @@ mkdir /home/$USER/.themes
 cp -r wallpapers/ /home/$USER/.wallpapers/
 unzip themes/Tokyonight-Dark-B.zip -d /home/$USER/.themes/
 unzip icons/Cursor.zip -d /home/$USER/.icons/
+unzip fonts/Ubuntu.zip -d /home/$USER/.local/share/fonts/
+unzip fonts/Source_Code_Pro.zip -d /home/$USER/.local/share/fonts/
 tar -xf icons/papirus-icon-theme-yaru-folders.tar.xz -C /home/$USER/.icons/ Papirus
 sync
 ln -sf /home/$USER/.icons/Papirus /home/$USER/.local/share/icons/
