@@ -4,10 +4,16 @@ There is a script included for quick setup.
 
 <img src="wallpapers/swayWM_TokyoNight.png">
 
+Main Programs Used:
+
+Sway   - Window Manager
+Waybar - Top Bar
+Fuzzel - Application Launcher
+
 # Prerequisites :-
 AMD GPU should be used instead of NVIDIA.
 
-Here is a single command to install them all in Archlinux:
+Here is a single command to install all the required Packages in Archlinux:
 
 sudo pacman -S mesa wayland sway swaylock swayidle swaybg fuzzel waybar gvfs alacritty thunar fragments firefox chromium celluloid gvfs-smb torbrowser-launcher firejail pipewire pipewire-pulse gvfs-mtp gsettings-desktop-schemas pamixer pavucontrol otf-font-awesome grim slurp swappy xdg-desktop-portal xdg-desktop-portal-wlr
 
