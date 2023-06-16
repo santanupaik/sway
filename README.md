@@ -14,10 +14,7 @@ Fuzzel - Application Launcher
 
 # Prerequisites :-
 AMD GPU should be used instead of NVIDIA.
-
-Here is a single command to install all the required Packages in Archlinux:
-
-sudo pacman -S mesa wayland sway swaylock swayidle swaybg fuzzel waybar gvfs alacritty thunar fragments firefox chromium celluloid gvfs-smb torbrowser-launcher firejail pipewire pipewire-pulse gvfs-mtp gsettings-desktop-schemas pamixer pavucontrol otf-font-awesome grim slurp swappy xdg-desktop-portal xdg-desktop-portal-wlr
+You can Run the required_packages.sh script to update & install all the necessary packages for this setup to function.
 
 # Installation :-
 Clone this Repo.
