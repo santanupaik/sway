@@ -7,7 +7,9 @@ There is a script included for quick setup.
 Main Programs Used:
 
 Sway   - Window Manager
+
 Waybar - Top Bar
+
 Fuzzel - Application Launcher
 
 # Prerequisites :-
