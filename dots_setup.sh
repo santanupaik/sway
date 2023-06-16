@@ -2,6 +2,8 @@
 
 echo "Setting up User Preferences............."
 
+mkdir -p -v /home/$USER/.config
+
 cp -r fuzzel /home/$USER/.config/
 cp -r swappy /home/$USER/.config/
 cp -r sway /home/$USER/.config/
@@ -10,7 +12,7 @@ cp -r waybar /home/$USER/.config/
 sync
 
 mkdir -p -v /home/$USER/Pictures/Screenshots
-mkdir /home/$USER/.local/share/fonts
+mkdir -p -v /home/$USER/.local/share/fonts
 mkdir /home/$USER/.local/share/icons
 mkdir /home/$USER/Downloads
 mkdir /home/$USER/Documents
