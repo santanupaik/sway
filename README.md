@@ -2,7 +2,7 @@
 This directory contains all the necessary files for setting the desktop to my liking.
 There is a script included for quick setup.
 
-<img src=".images/swayWM_TokyoNight.png">
+<img src="wallpapers/swayWM_TokyoNight.png">
 
 # Prerequisites :-
 AMD GPU should be used instead of NVIDIA.
