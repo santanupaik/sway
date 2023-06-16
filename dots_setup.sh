@@ -10,6 +10,7 @@ cp -r waybar /home/$USER/.config/
 cp -r fonts /home/$USER/.local/share/
 sync
 
+mkdir /home/$USER/Pictures/Screenshots
 mkdir /home/$USER/.local/share/icons
 mkdir /home/$USER/.wallpapers
 mkdir /home/$USER/.icons
