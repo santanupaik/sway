@@ -15,9 +15,9 @@ case $ans in
     ;;
     *)
     	echo
-	    echo "Invalid Choice."
-	    echo
-	    exit 0
+	echo "Invalid Choice."
+	echo
+	exit 0
     ;;
 esac
 echo
