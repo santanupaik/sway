@@ -55,6 +55,7 @@ bsdtar -xf icons/papirus-icon-theme-yaru-folders.tar.xz -C /home/$USER/.icons/ P
 sync
 printf "Done\n"
 printf "Linking the necessary Directories...                                       "
+sleep 1s
 ln -sf /home/$USER/.icons/Papirus /home/$USER/.local/share/icons/
 ln -sf /home/$USER/.themes/Tokyonight-Dark-B/gtk-4.0 /home/$USER/.config/
 printf "Done\n"
