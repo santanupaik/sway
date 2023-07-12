@@ -15,7 +15,7 @@ Fuzzel - Application Launcher
 # Prerequisites :-
 AMD GPU should be used instead of NVIDIA.
 
-CONFIG FILES CATER TO A MULTI-HEAD SETUP.
+Config Files Cater to a Multi-Head Setup.
 
 You can Run the required_packages.sh script to update & install all the necessary packages for this setup to function.
 
