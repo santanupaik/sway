@@ -28,8 +28,10 @@ echo
 echo "Installing all the Required Packages..."
 sleep 1s
 echo
-sudo pacman -S --noconfirm xdg-desktop-portal 
-sudo pacman -S --noconfirm mesa wayland sway swaylock swayidle swaybg fuzzel waybar gvfs alacritty thunar fragments firefox chromium celluloid gvfs-smb torbrowser-launcher firejail pipewire pipewire-pulse gvfs-mtp gsettings-desktop-schemas pamixer pavucontrol otf-font-awesome grim slurp swappy xdg-desktop-portal-wlr
+sudo pacman -S --noconfirm linux linux-headers base-devel openssh linux-firmware vim git networkmanager wpa_supplicant wireless_tools netctl dialog
+sudo pacman -S --noconfirm amd-ucode sbctl efibootmgr dosfstools mtools
+sudo pacman -S --noconfirm mesa wayland sway swaylock swayidle swaybg fuzzel waybar gvfs alacritty thunar fragments firefox chromium celluloid gvfs-smb torbrowser-launcher firejail pipewire pipewire-pulse gvfs-mtp gsettings-desktop-schemas pamixer pavucontrol otf-font-awesome grim slurp swappy
+sudo pacman -S --noconfirm gedit ristretto corectrl qt5-wayland qt6-wayland wget android-tools exfat-utils zathura zathura-pdf-mupdf usbutils htop neofetch keepassxc thunar-archive-plugin thunar-volman tumbler file-roller
 sleep 1s
 echo
 echo "Success !!"
