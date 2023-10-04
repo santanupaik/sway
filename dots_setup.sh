@@ -32,6 +32,7 @@ cp -r swappy /home/$USER/.config/
 cp -r sway /home/$USER/.config/
 cp -r swaylock /home/$USER/.config/
 cp -r waybar /home/$USER/.config/
+cp -r alacritty /home/$USER/.config/
 sync
 printf "Done\n"
 printf "Creating the rest of the necessary Directories...                          "
