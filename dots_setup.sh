@@ -40,6 +40,7 @@ sleep 1s
 mkdir -p /home/$USER/Pictures/Screenshots
 mkdir -p /home/$USER/.local/share/fonts
 mkdir /home/$USER/.local/share/icons
+mkdir /home/$USER/.local/share/gedit/styles
 mkdir /home/$USER/Downloads
 mkdir /home/$USER/Documents
 mkdir /home/$USER/.icons
@@ -47,6 +48,7 @@ mkdir /home/$USER/.themes
 printf "Done\n"
 printf "Extracting rest the necessary files to their appropriate Directories...    "
 sleep 1s
+cp -r gedit/tokyonight-dark.xml /home/$USER/.local/share/gedit/styles/
 bsdtar -xf wallpapers/wallpapers.zip -C /home/$USER/
 bsdtar -xf themes/Tokyonight-Dark-B.zip -C /home/$USER/.themes/
 bsdtar -xf icons/Cursor.zip -C /home/$USER/.icons/
