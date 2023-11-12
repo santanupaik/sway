@@ -53,9 +53,8 @@ mkdir /home/$USER/.icons
 mkdir /home/$USER/.themes
 printf "DONE\n"
 
-printf "Extracting rest the necessary files to their appropriate Directories...    "
+printf "Extracting rest of the necessary files to their appropriate Directories...    "
 sleep 1s
-cp -r gedit/tokyonight-dark.xml /home/$USER/.local/share/gedit/styles/
 bsdtar -xf wallpapers/wallpapers.zip -C /home/$USER/
 bsdtar -xf themes/Tokyonight-Dark-B.zip -C /home/$USER/.themes/
 bsdtar -xf icons/Cursor.zip -C /home/$USER/.icons/
@@ -69,7 +68,7 @@ ln -sf /home/$USER/.icons/Papirus /home/$USER/.local/share/icons/
 ln -sf /home/$USER/.themes/Tokyonight-Dark-B/gtk-4.0 /home/$USER/.config/
 printf "DONE\n"
 
-printf "Appending required variables to .bash_profile...                           "
+printf "Appending strings to their required config files...                           "
 sleep 1s
 cat bash_profile-append >> /home/$USER/.bash_profile
 cat electron-append >> /home/$USER/.config/electron-flags.conf
