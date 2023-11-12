@@ -43,7 +43,7 @@ cp -r gedit /home/$USER/.local/share/
 sync
 printf "DONE\n"
 
-printf "Creating the rest of the necessary Directories...                          "
+printf "Creating rest of the necessary Directories...                              "
 sleep 1s
 mkdir -p /home/$USER/Pictures/Screenshots
 mkdir /home/$USER/.local/share/icons
@@ -53,7 +53,7 @@ mkdir /home/$USER/.icons
 mkdir /home/$USER/.themes
 printf "DONE\n"
 
-printf "Extracting rest of the necessary files to their appropriate Directories...    "
+printf "Extracting rest of the necessary files to their appropriate Directories... "
 sleep 1s
 bsdtar -xf wallpapers/wallpapers.zip -C /home/$USER/
 bsdtar -xf themes/Tokyonight-Dark-B.zip -C /home/$USER/.themes/
@@ -68,7 +68,7 @@ ln -sf /home/$USER/.icons/Papirus /home/$USER/.local/share/icons/
 ln -sf /home/$USER/.themes/Tokyonight-Dark-B/gtk-4.0 /home/$USER/.config/
 printf "DONE\n"
 
-printf "Appending strings to their required config files...                           "
+printf "Appending strings to their required config files...                        "
 sleep 1s
 cat bash_profile-append >> /home/$USER/.bash_profile
 cat electron-append >> /home/$USER/.config/electron-flags.conf
