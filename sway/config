@@ -93,6 +93,7 @@ bindsym $mod+alt+c exec corectrl
 bindsym $mod+z exec "firejail firefox"
 bindsym $mod+c exec "firejail chromium"
 bindsym $mod+x exec "thunar"
+bindsym $mod+Shift+v exec code
 
 # Change and Mute Volume #
 bindsym F12 exec "pamixer -u -i 5 && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
@@ -100,7 +101,7 @@ bindsym F11 exec "pamixer -d 5 && paplay /usr/share/sounds/freedesktop/stereo/au
 bindsym F10 exec "pamixer -t && sleep 0.3 && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
 
 # Launch Virtual Machines #
-bindsym $mod+shift+v exec "virsh --connect qemu:///session start manjaro && virt-viewer manjaro -f"
+bindsym $mod+shift+e exec "virsh --connect qemu:///session start manjaro && virt-viewer manjaro -f"
 bindsym $mod+shift+w exec "virsh --connect qemu:///session start win10 && virt-viewer win10 -f"
 
 # Take Screenshots #
