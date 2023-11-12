@@ -38,8 +38,7 @@ printf "Done\n"
 printf "Creating the rest of the necessary Directories...                          "
 sleep 1s
 mkdir -p /home/$USER/Pictures/Screenshots
-mkdir -p /home/$USER/.local/share/fonts
-mkdir /home/$USER/.local/share/icons
+mkdir -p /home/$USER/.local/share/icons
 mkdir /home/$USER/.local/share/gedit/styles
 mkdir /home/$USER/Downloads
 mkdir /home/$USER/Documents
@@ -52,8 +51,6 @@ cp -r gedit/tokyonight-dark.xml /home/$USER/.local/share/gedit/styles/
 bsdtar -xf wallpapers/wallpapers.zip -C /home/$USER/
 bsdtar -xf themes/Tokyonight-Dark-B.zip -C /home/$USER/.themes/
 bsdtar -xf icons/Cursor.zip -C /home/$USER/.icons/
-bsdtar -xf fonts/Ubuntu.zip -C /home/$USER/.local/share/fonts/
-bsdtar -xf fonts/SourceCodePro.zip -C /home/$USER/.local/share/fonts/
 bsdtar -xf icons/papirus-icon-theme-yaru-folders.tar.xz -C /home/$USER/.icons/ Papirus
 sync
 printf "Done\n"
