@@ -39,7 +39,7 @@ printf "Creating the rest of the necessary Directories...                       
 sleep 1s
 mkdir -p /home/$USER/Pictures/Screenshots
 mkdir -p /home/$USER/.local/share/icons
-mkdir /home/$USER/.local/share/gedit/styles
+mkdir -p /home/$USER/.local/share/gedit/styles
 mkdir /home/$USER/Downloads
 mkdir /home/$USER/Documents
 mkdir /home/$USER/.icons
