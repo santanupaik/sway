@@ -174,7 +174,7 @@ exec_always {
 
 set $gedit-schema org.gnome.gedit.preferences.editor
 exec_always {
-     gsettings set $gedit-schema editor-font 'Hack Nerd Font 10'
+     gsettings set $gedit-schema editor-font 'Monospace Regular 10'
      gsettings set $gedit-schema scheme 'tokyonight-dark'
 }
 
