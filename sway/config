@@ -101,7 +101,7 @@ bindsym F11 exec "pamixer -d 5 && paplay /usr/share/sounds/freedesktop/stereo/au
 bindsym F10 exec "pamixer -t && sleep 0.3 && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
 
 # Launch Virtual Machines #
-bindsym $mod+shift+e exec "virsh --connect qemu:///session start manjaro && virt-viewer manjaro -f"
+bindsym $mod+shift+v exec "virsh --connect qemu:///session start manjaro && virt-viewer manjaro -f"
 bindsym $mod+shift+w exec "virsh --connect qemu:///session start win10 && virt-viewer win10 -f"
 
 # Take Screenshots #
