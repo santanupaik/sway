@@ -79,7 +79,8 @@ echo
 read -p "Script Succeeded. Remove Cloned Repository ? (y/n): " dans
 case $dans in
     y|Y)
-        rm -rf /home/$USER/userdots && echo "DONE" && cd /home/$USER/
+        cd /home/$USER/
+        rm -rf /home/$USER/userdots && echo "DONE"
     ;;
     n|N)
         echo "Keeping Cloned Repo Intact."
