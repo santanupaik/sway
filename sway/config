@@ -165,14 +165,15 @@ bar {
 
 ## GNOME THEMES ##
 set $gnome-schema org.gnome.desktop.interface
-
 exec_always {
 	gsettings set $gnome-schema gtk-theme 'Tokyonight-Dark-B'
 	gsettings set $gnome-schema icon-theme 'Papirus'
 	gsettings set $gnome-schema cursor-theme 'Win-8.1-S'
 	gsettings set $gnome-schema cursor-size '24'
-	gsettings set $gnome-schema font-name ''
+	gsettings set $gnome-schema font-name 'Ubuntu 11'
 }
+gsettings set org.gnome.gedit.preferences.editor editor-font 'Hack Nerd Font 10'
+gsettings set org.gnome.gedit.preferences.editor scheme 'tokyonight-dark'
 
 
 ## XWAYLAND ##
