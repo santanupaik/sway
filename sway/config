@@ -141,6 +141,7 @@ for_window [app_id="io.github.celluloid_player.Celluloid"] floating enable, resi
 for_window [app_id="org.keepassxc.KeePassXC"] floating enable, resize set 745 496
 for_window [app_id="corectrl"] floating enable, resize set 800 530
 for_window [app_id="virt-manager"] floating enable, resize set 577 375
+for_window [app_id="file-roller"] floating enable
 
 
 ## IDLE INHIBITOR ##
