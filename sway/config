@@ -105,7 +105,7 @@ bindsym $mod+shift+r exec "virsh --connect qemu:///session start manjaro && virt
 bindsym $mod+shift+w exec "virsh --connect qemu:///session start win10 && virt-viewer win10 -f"
 
 # Take Screenshots #
-bindsym Print exec "grim -g "$(slurp)" - | swappy -f -"
+bindsym Print exec grim -g "$(slurp)" - | swappy -f -
 
 # Toggle Lock Screen #
 bindsym $mod+Alt+l exec swaylock
