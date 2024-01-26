@@ -154,7 +154,7 @@
     "format": "Ethernet  ",
     "exec": "curl icanhazip.com",
     "interval": "once",
-    //"on-click": "firejail chromium --incognito https://10.10.243.65/0/up",
+    //"on-click": "firejail chromium --incognito https://{URL}/0/up",
     "format-alt": "{}  ",
     },
     "custom/clock": {
