@@ -40,7 +40,7 @@ pacman -S --noconfirm mesa libva-mesa-driver wayland sway swaylock swayidle sway
 pacman -S --noconfirm gedit ristretto corectrl qt5-wayland qt6-wayland wget android-tools exfatprogs zathura \
                       zathura-pdf-mupdf usbutils htop neofetch keepassxc thunar-archive-plugin thunar-volman \
                       tumbler file-roller pwgen ttf-dejavu noto-fonts-cjk noto-fonts-emoji noto-fonts code \
-                      ttf-hack-nerd ttf-sourcecodepro-nerd ttf-ubuntu-font-family
+                      ttf-hack-nerd ttf-sourcecodepro-nerd ttf-ubuntu-font-family gnome-themes-extra gtk2-engines-murrine
 sleep 1s
 
 echo

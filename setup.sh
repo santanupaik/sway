@@ -40,6 +40,7 @@ cp -r waybar /home/$USER/.config/
 cp -r alacritty /home/$USER/.config/
 cp -r thunar /home/$USER/.config/
 cp -r gedit /home/$USER/.local/share/
+cp -r themes/Tokyonight-Dark-B/"gta-4.0" /home/$USER/.config/
 sync
 printf "DONE\n"
 
@@ -47,32 +48,25 @@ printf "Creating rest of the necessary Directories...                           
 sleep 1s
 mkdir -p /home/$USER/Pictures/Screenshots
 mkdir /home/$USER/.local/share/icons
+mkdir /home/$USER/.local/share/themes
+mkdir /home/$USER/.local/share/wallpapers
 mkdir /home/$USER/Downloads
 mkdir /home/$USER/Documents
-mkdir /home/$USER/.icons
-mkdir /home/$USER/.themes
 printf "DONE\n"
 
-printf "Extracting rest of the necessary files to their appropriate Directories... "
+printf "Moving rest of the necessary files to their appropriate Directories... "
 sleep 1s
-bsdtar -xf wallpapers/wallpapers.zip -C /home/$USER/
-bsdtar -xf themes/Tokyonight-Dark-B.zip -C /home/$USER/.themes/
-bsdtar -xf icons/Cursor.zip -C /home/$USER/.icons/
-bsdtar -xf icons/papirus-icon-theme-yaru-folders.tar.xz -C /home/$USER/.icons/ Papirus
+mv wallpapers/assets/* /home/$USER/.local/share/wallpapers/
+mv themes/* /home/$USER/.local/share/themes/
+mv icons/* /home/$USER/.local/share/icons/
 sync
-printf "DONE\n"
-
-printf "Linking the necessary Directories...                                       "
-sleep 1s
-ln -sf /home/$USER/.icons/Papirus /home/$USER/.local/share/icons/
-ln -sf /home/$USER/.themes/Tokyonight-Dark-B/gtk-4.0 /home/$USER/.config/
 printf "DONE\n"
 
 printf "Appending strings to their required config files...                        "
 sleep 1s
 < bash_profile tee -a /home/$USER/.bash_profile > /dev/null
-< electron-append tee -a /home/$USER/.config/electron-flags.conf > /dev/null
-< electron-append tee -a /home/$USER/.config/code-flags.conf > /dev/null
+< electron-flags tee -a /home/$USER/.config/electron-flags.conf > /dev/null
+< electron-flags tee -a /home/$USER/.config/code-flags.conf > /dev/null
 printf "DONE\n"
 
 echo
