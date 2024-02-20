@@ -70,9 +70,9 @@ printf "DONE\n"
 
 printf "Appending strings to their required config files...                        "
 sleep 1s
-cat bash_profile-append >> /home/$USER/.bash_profile
-cat electron-append >> /home/$USER/.config/electron-flags.conf
-cat electron-append >> /home/$USER/.config/code-flags.conf
+< bash_profile tee -a /home/$USER/.bash_profile > /dev/null
+< electron-append tee -a /home/$USER/.config/electron-flags.conf > /dev/null
+< electron-append tee -a /home/$USER/.config/code-flags.conf > /dev/null
 printf "DONE\n"
 
 echo
