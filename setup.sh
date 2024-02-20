@@ -54,7 +54,7 @@ mkdir /home/$USER/Downloads
 mkdir /home/$USER/Documents
 printf "DONE\n"
 
-printf "Moving rest of the necessary files to their appropriate Directories... "
+printf "Moving rest of the necessary files to their appropriate Directories...     "
 sleep 1s
 mv wallpapers/assets/* /home/$USER/.local/share/wallpapers/
 mv themes/* /home/$USER/.local/share/themes/
