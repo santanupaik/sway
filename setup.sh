@@ -38,7 +38,7 @@ cp -r sway /home/$USER/.config/
 cp -r swaylock /home/$USER/.config/
 cp -r waybar /home/$USER/.config/
 cp -r alacritty /home/$USER/.config/
-cp -r Thunar /home/$USER/.config/
+cp -r thunar /home/$USER/.config/
 cp -r gedit /home/$USER/.local/share/
 sync
 printf "DONE\n"
@@ -79,7 +79,7 @@ echo
 read -p "Script Succeeded. Remove Cloned Repository ? (y/n): " dans
 case $dans in
     y|Y)
-        rm -rf /home/$USER/userdots && echo "DONE"
+        rm -rf /home/$USER/swaywm && echo "DONE"
     ;;
     n|N)
         echo "Keeping Cloned Repo Intact."
