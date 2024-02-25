@@ -38,7 +38,7 @@ cp -r sway /home/$USER/.config/
 cp -r swaylock /home/$USER/.config/
 cp -r waybar /home/$USER/.config/
 cp -r alacritty /home/$USER/.config/
-cp -r thunar /home/$USER/.config/
+cp -r Thunar /home/$USER/.config/
 cp -r gedit /home/$USER/.local/share/
 cp -r themes/Tokyonight-Dark-B/"gtk-4.0" /home/$USER/.config/
 sync
