@@ -41,7 +41,6 @@ cp -r alacritty /home/$USER/.config/
 cp -r Thunar /home/$USER/.config/
 cp -r gedit /home/$USER/.local/share/
 cp -r themes/Tokyonight-Dark-B/"gtk-4.0" /home/$USER/.config/
-cp chromium-flags.conf /home/$USER/.config/
 sync
 printf "DONE\n"
 
@@ -65,9 +64,10 @@ printf "DONE\n"
 
 printf "Appending strings to their required config files...                        "
 sleep 1s
-< bash_profile tee -a /home/$USER/.bash_profile > /dev/null
-< electron-flags tee -a /home/$USER/.config/electron-flags.conf > /dev/null
-< electron-flags tee -a /home/$USER/.config/code-flags.conf > /dev/null
+< misc/bash-profile tee -a /home/$USER/.bash_profile > /dev/null
+< misc/electron-flags tee -a /home/$USER/.config/electron-flags.conf > /dev/null
+< misc/electron-flags tee -a /home/$USER/.config/code-flags.conf > /dev/null
+< misc/electron-flags tee -a /home/$USER/.config/chromium-flags.conf > /dev/null
 printf "DONE\n"
 
 echo
