@@ -41,6 +41,7 @@ cp -r alacritty /home/$USER/.config/
 cp -r Thunar /home/$USER/.config/
 cp -r gedit /home/$USER/.local/share/
 cp -r themes/Tokyonight-Dark-B/"gtk-4.0" /home/$USER/.config/
+cp chromium-flags.conf /home/$USER/.config/
 sync
 printf "DONE\n"
 
