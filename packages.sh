@@ -32,7 +32,7 @@ echo "Installing all the Required Packages..."
 sleep 1s
 
 echo
-pacman -S --noconfirm linux linux-headers base-devel openssh linux-firmware vim git networkmanager netctl dialog
+pacman -S --noconfirm linux linux-headers base-devel openssh linux-firmware vim git networkmanager netctl dialog reflector
 pacman -S --noconfirm amd-ucode sbctl efibootmgr dosfstools mtools
 pacman -S --noconfirm mesa libva-mesa-driver wayland sway swaylock swayidle swaybg fuzzel waybar gvfs alacritty \
                       thunar fragments celluloid gvfs-smb torbrowser-launcher pipewire pipewire-pulse gvfs-mtp \
@@ -40,7 +40,7 @@ pacman -S --noconfirm mesa libva-mesa-driver wayland sway swaylock swayidle sway
 pacman -S --noconfirm gedit ristretto corectrl qt5-wayland qt6-wayland wget android-tools exfatprogs zathura \
                       zathura-pdf-mupdf usbutils htop neofetch keepassxc thunar-archive-plugin thunar-volman \
                       tumbler file-roller pwgen ttf-dejavu noto-fonts-cjk noto-fonts-emoji noto-fonts code \
-                      ttf-hack-nerd ttf-sourcecodepro-nerd ttf-ubuntu-font-family gnome-themes-extra gtk2-engines-murrine
+                      ttf-hack-nerd ttf-sourcecodepro-nerd ttf-ubuntu-font-family gnome-themes-extra github-cli
 sleep 1s
 
 echo
