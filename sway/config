@@ -151,8 +151,8 @@ for_window [app_id="io.github.celluloid_player.Celluloid"] inhibit_idle fullscre
 
 
 ## DISPLAY ##
-output HDMI-A-1 bg /home/$USER/.local/share/wallpapers/desktop1.jpg fill
-output HDMI-A-2 bg /home/$USER/.local/share/wallpapers/desktop2.jpg fill
+output HDMI-A-1 bg /home/$USER/.local/share/wallpapers/desktop.jpg fill
+output HDMI-A-2 bg /home/$USER/.local/share/wallpapers/desktop.jpg fill
 output HDMI-A-1 mode 1920x1080@75Hz position 1920,430 adaptive_sync on
 output HDMI-A-2 mode 1920x1080@75Hz position 3840,0 transform 270 adaptive_sync on
 
