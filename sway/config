@@ -90,10 +90,8 @@ bindsym $mod+d exec $menu
 bindsym $mod+shift+f exec fragments
 bindsym $mod+alt+k exec keepassxc
 bindsym $mod+alt+c exec corectrl
-bindsym $mod+z exec "firejail firefox"
-bindsym $mod+c exec "firejail chromium"
+bindsym $mod+c exec code
 bindsym $mod+x exec "thunar"
-bindsym $mod+shift+v exec code
 
 # Change and Mute Volume #
 bindsym F12 exec "pamixer -u -i 5 && paplay /usr/share/sounds/freedesktop/stereo/audio-volume-change.oga"
@@ -112,7 +110,7 @@ bindsym $mod+Alt+l exec swaylock
 
 
 ## INPUT DEVICES ##
-input "5426:138:Razer_Razer_Viper_Mini" {
+input "1133:16500:Logitech_G304" {
     dwt enabled
     tap enabled
     natural_scroll disabled
