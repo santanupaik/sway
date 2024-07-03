@@ -35,7 +35,7 @@ echo
 pacman -S --noconfirm linux linux-headers base-devel openssh linux-firmware vim git networkmanager netctl dialog reflector
 pacman -S --noconfirm amd-ucode sbctl efibootmgr dosfstools mtools
 pacman -S --noconfirm mesa libva-mesa-driver wayland sway swaylock swayidle swaybg fuzzel waybar gvfs alacritty \
-                      thunar fragments celluloid gvfs-smb torbrowser-launcher pipewire pipewire-pulse gvfs-mtp \
+                      thunar fragments celluloid gvfs-smb pipewire pipewire-pulse gvfs-mtp \
                       gsettings-desktop-schemas pamixer pavucontrol otf-font-awesome grim slurp swappy rsync
 pacman -S --noconfirm gedit ristretto corectrl qt5-wayland qt6-wayland wget android-tools exfatprogs zathura \
                       zathura-pdf-mupdf usbutils htop neofetch keepassxc thunar-archive-plugin thunar-volman \
