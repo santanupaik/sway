@@ -2,7 +2,7 @@
 <actions>
 <action>
 	<icon>utilities-terminal</icon>
-	<name>Open Terminal Here</name>
+	<name>Terminal</name>
 	<submenu></submenu>
 	<unique-id>1696979362387100-1</unique-id>
 	<command>alacritty --working-directory $(pwd)</command>
