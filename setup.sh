@@ -72,7 +72,7 @@ printf "DONE\n"
 
 printf "Moving rest of the necessary files...                   "
 sleep 1s
-mv wallpapers/assets/* $HOME/.local/share/wallpapers/
+mv wallpapers/* $HOME/.local/share/wallpapers/
 mv themes/Tokyonight-Dark-B $HOME/.local/share/themes/
 mv themes/* $HOME/.local/share/icons/
 sync
