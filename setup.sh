@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo
-read -p "Setup your Desktop Environment ? (y/n): " sans
-case $sans in
+read -p "Setup your Desktop Environment ? (y/n): " userInput
+case $userInput in
     y|Y)
     	echo
         echo "Setup is Starting..."
@@ -26,8 +26,8 @@ echo
 printf "Creating necessary directories...                       "
 sleep 1s
 
-mkdir -p /home/$USER/.config
-mkdir -p /home/$USER/.local/share
+mkdir -p $HOME/.config
+mkdir -p $HOME/.local/share
 mkdir themes
 printf "DONE\n"
 
@@ -48,49 +48,49 @@ printf "DONE\n"
 
 printf "Copying the necessary config files to .config...        "
 sleep 1s
-cp -r fuzzel /home/$USER/.config/
-cp -r swappy /home/$USER/.config/
-cp -r sway /home/$USER/.config/
-cp -r swaylock /home/$USER/.config/
-cp -r waybar /home/$USER/.config/
-cp -r alacritty /home/$USER/.config/
-cp -r Thunar /home/$USER/.config/
-cp -r gedit /home/$USER/.local/share/
-cp -r themes/Tokyonight-Dark-B/"gtk-4.0" /home/$USER/.config/
+cp -r fuzzel $HOME/.config/
+cp -r swappy $HOME/.config/
+cp -r sway $HOME/.config/
+cp -r swaylock $HOME/.config/
+cp -r waybar $HOME/.config/
+cp -r alacritty $HOME/.config/
+cp -r Thunar $HOME/.config/
+cp -r gedit $HOME/.local/share/
+cp -r themes/Tokyonight-Dark-B/"gtk-4.0" $HOME/.config/
 sync
 printf "DONE\n"
 
 printf "Creating rest of the necessary Directories...           "
 sleep 1s
-mkdir -p /home/$USER/Pictures/Screenshots
-mkdir /home/$USER/.local/share/icons
-mkdir /home/$USER/.local/share/themes
-mkdir /home/$USER/.local/share/wallpapers
-mkdir /home/$USER/Downloads
-mkdir /home/$USER/Documents
+mkdir -p $HOME/Pictures/Screenshots
+mkdir $HOME/.local/share/icons
+mkdir $HOME/.local/share/themes
+mkdir $HOME/.local/share/wallpapers
+mkdir $HOME/Downloads
+mkdir $HOME/Documents
 printf "DONE\n"
 
 printf "Moving rest of the necessary files...                   "
 sleep 1s
-mv wallpapers/assets/* /home/$USER/.local/share/wallpapers/
-mv themes/Tokyonight-Dark-B /home/$USER/.local/share/themes/
-mv themes/* /home/$USER/.local/share/icons/
+mv wallpapers/assets/* $HOME/.local/share/wallpapers/
+mv themes/Tokyonight-Dark-B $HOME/.local/share/themes/
+mv themes/* $HOME/.local/share/icons/
 sync
 printf "DONE\n"
 
 printf "Appending strings to their required config files...     "
 sleep 1s
-< misc/bash-profile tee -a /home/$USER/.bash_profile > /dev/null
-< misc/electron-flags tee -a /home/$USER/.config/electron-flags.conf > /dev/null
-< misc/electron-flags tee -a /home/$USER/.config/code-flags.conf > /dev/null
-< misc/electron-flags tee -a /home/$USER/.config/chromium-flags.conf > /dev/null
+< misc/bash-profile tee -a $HOME/.bash_profile > /dev/null
+< misc/electron-flags tee -a $HOME/.config/electron-flags.conf > /dev/null
+< misc/electron-flags tee -a $HOME/.config/code-flags.conf > /dev/null
+< misc/electron-flags tee -a $HOME/.config/chromium-flags.conf > /dev/null
 printf "DONE\n"
 
 echo
-read -p "Script Succeeded. Remove Cloned Repository ? (y/n): " dans
-case $dans in
+read -p "Script Succeeded. Remove Cloned Repository ? (y/n): " userInput
+case $userInput in
     y|Y)
-        rm -rf /home/$USER/swaywm && echo "DONE"
+        rm -rf $HOME/swaywm && echo "DONE"
     ;;
     n|N)
         echo "Keeping Cloned Repo Intact."
