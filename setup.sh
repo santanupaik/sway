@@ -31,15 +31,13 @@ mkdir -p $HOME/.local/share
 printf "DONE\n"
 
 printf "Downloading Theme files... (This might take a while)    "
-wget -q https://master.dl.sourceforge.net/project/swaywm/Tokyonight-Dark-B.tar.gz -P themes
 wget -q https://master.dl.sourceforge.net/project/swaywm/Papirus.tar.gz -P themes
 printf "DONE\n"
 
 printf "Extracting Theme files...                               "
 tar -xzf themes/cursor.tar.gz -C themes 2> /dev/null
-tar -xzf themes/Tokyonight-Dark-B.tar.gz -C themes 2> /dev/null
+tar -xzf themes/tokyonight.tar.gz -C themes 2> /dev/null
 tar -xzf themes/Papirus.tar.gz -C themes 2> /dev/null 
-rm themes/Tokyonight-Dark-B.tar.gz
 rm themes/Papirus.tar.gz
 printf "DONE\n"
 
@@ -53,7 +51,7 @@ cp -r waybar $HOME/.config/
 cp -r alacritty $HOME/.config/
 cp -r Thunar $HOME/.config/
 cp -r gedit $HOME/.local/share/
-cp -r themes/Tokyonight-Dark-B/"gtk-4.0" $HOME/.config/
+cp -r themes/Tokyonight-Dark/"gtk-4.0" $HOME/.config/
 sync
 printf "DONE\n"
 
@@ -70,8 +68,8 @@ printf "DONE\n"
 printf "Moving rest of the necessary files...                   "
 sleep 1s
 mv wallpapers/* $HOME/.local/share/wallpapers/
-mv themes/Tokyonight-Dark-B $HOME/.local/share/themes/
-mv themes/* $HOME/.local/share/icons/
+mv themes/Tokyonight-Dark $HOME/.local/share/themes/
+mv themes/Breeze_Light $HOME/.local/share/icons/
 sync
 printf "DONE\n"
 
