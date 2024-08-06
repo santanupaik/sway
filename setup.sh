@@ -30,15 +30,9 @@ mkdir -p $HOME/.config
 mkdir -p $HOME/.local/share
 printf "DONE\n"
 
-printf "Downloading Theme files... (This might take a while)    "
-wget -q https://master.dl.sourceforge.net/project/swaywm/Papirus.tar.gz -P themes
-printf "DONE\n"
-
 printf "Extracting Theme files...                               "
 tar -xzf themes/cursor.tar.gz -C themes 2> /dev/null
 tar -xzf themes/tokyonight.tar.gz -C themes 2> /dev/null
-tar -xzf themes/Papirus.tar.gz -C themes 2> /dev/null 
-rm themes/Papirus.tar.gz
 printf "DONE\n"
 
 printf "Copying the necessary config files to .config...        "
