@@ -28,20 +28,17 @@ sleep 1s
 
 mkdir -p $HOME/.config
 mkdir -p $HOME/.local/share
-mkdir themes
 printf "DONE\n"
 
 printf "Downloading Theme files... (This might take a while)    "
-wget -q https://master.dl.sourceforge.net/project/swaywm/Win-8.1-S.tar.gz -P themes
 wget -q https://master.dl.sourceforge.net/project/swaywm/Tokyonight-Dark-B.tar.gz -P themes
 wget -q https://master.dl.sourceforge.net/project/swaywm/Papirus.tar.gz -P themes
 printf "DONE\n"
 
 printf "Extracting Theme files...                               "
-tar -xzf themes/Win-8.1-S.tar.gz -C themes 2> /dev/null
-tar -xzf themes/Tokyonight-Dark-B.tar.gz -C themes 2> /dev/null 
+tar -xzf themes/cursor.tar.gz -C themes 2> /dev/null
+tar -xzf themes/Tokyonight-Dark-B.tar.gz -C themes 2> /dev/null
 tar -xzf themes/Papirus.tar.gz -C themes 2> /dev/null 
-rm themes/Win-8.1-S.tar.gz
 rm themes/Tokyonight-Dark-B.tar.gz
 rm themes/Papirus.tar.gz
 printf "DONE\n"
@@ -90,7 +87,7 @@ echo
 read -p "Script Succeeded. Remove Cloned Repository ? (y/n): " userInput
 case $userInput in
     y|Y)
-        rm -rf $HOME/swaywm && echo "DONE"
+        rm -rf $HOME/sway && echo "DONE"
     ;;
     n|N)
         echo "Keeping Cloned Repo Intact."
