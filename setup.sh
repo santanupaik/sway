@@ -22,6 +22,8 @@ case $userInput in
     ;;
 esac
 
+./packages.sh
+
 echo
 printf "Creating necessary directories...                       "
 sleep 1s

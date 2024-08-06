@@ -41,7 +41,7 @@ pacman -S --noconfirm gedit ristretto corectrl qt5-wayland qt6-wayland wget andr
                       zathura-pdf-mupdf usbutils htop neofetch keepassxc thunar-archive-plugin thunar-volman \
                       tumbler file-roller pwgen ttf-dejavu noto-fonts-cjk noto-fonts-emoji noto-fonts code \
                       ttf-hack-nerd ttf-sourcecodepro-nerd ttf-ubuntu-font-family gnome-themes-extra github-cli \
-                      papirus-icon-theme
+                      papirus-icon-theme gtk-engine-murrine
 sleep 1s
 
 echo
